@@ -3,6 +3,7 @@ var config = require('../config')
 var utils = require('./utils')
 var projectRoot = path.resolve(__dirname, '../')
 
+
 var env = process.env.NODE_ENV
 // check env & config/index.js to decide whether to enable CSS source maps for the
 // various preprocessor loaders added to vue-loader at the end of this file
@@ -67,9 +68,9 @@ module.exports = {
       {
           test: /\.css$/,
           loaders: [
-              'style-loader',
-              'css-loader?importLoaders=1',
-              'postcss-loader'
+              // 'style-loader',
+              // 'css-loader?importLoaders=1',
+              // 'postcss-loader'
           ]
       }
     ]
@@ -77,13 +78,14 @@ module.exports = {
   vue: {
     loaders: utils.cssLoaders({ sourceMap: useCssSourceMap }),
     postcss: [
-      require('autoprefixer')({
-        browsers: ['last 2 versions']
-      }),
+      // require('autoprefixer')({
+      //   browsers: ['last 2 versions']
+      // }),
       require('postcss-cssnext')()
     ]
   },
-  postcss:function () {
-      return [autoprefixer,postcss-cssnext];
-  }
+  postcss:[
+    require('postcss-cssnext')()
+  ]
+  
 }

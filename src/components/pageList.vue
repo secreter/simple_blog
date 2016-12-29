@@ -1,6 +1,6 @@
 <template>
-  <div class="hello">
-    
+  <div class="page-list">
+    asasas
   </div>
 </template>
 
@@ -15,5 +15,7 @@ export default {
 </script>
 
 <style>
+.page-list{
 
+}
 </style>

@@ -1,4 +1,4 @@
-// import applicantsTable from '../components/applicantsTable'
+import pageList from '../components/pageList'
 // 1. 定义（路由）组件。
 // 可以从其他文件 import 进来
 const Foo = { template: '<div>foo</div>' }
@@ -13,6 +13,7 @@ const User = { template: '<div> {{ $route.params.name }}</div>' }
 // 我们晚点再讨论嵌套路由。
 const routes = [
   { path: '/hello', component: hello },
+  { path: '/list', component: pageList },
   // 动态路径参数 以冒号开头
   { path: '/user/:name', component: User },
 ]
