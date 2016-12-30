@@ -32,9 +32,16 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #333;
 }
 :link{
   cursor: pointer;
+}
+.page{
+  height: 100%;
+  overflow-y: scroll;
+  flex-grow: 1;
+  padding: 20px 40px;
 }
 body{
   background-color: var(--primary-bg-color);
@@ -43,6 +50,7 @@ body{
 .blog-layout{
   display: flex;
   height: 100%;
+  align-items: stretch;
 }
 
 </style>

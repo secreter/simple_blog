@@ -12,7 +12,7 @@
     		<router-link class="base-link" to="/list">首页</router-link>
     	</li>
     	<li class="_item">
-    		<router-link class="base-link" to="/">专题</router-link></li>
+    		<router-link class="base-link" to="/topic">专题</router-link></li>
     	<li class="_item">
     		<router-link class="base-link" to="/list">归档</router-link></li>
     </ul>
@@ -51,9 +51,10 @@ export default {
 	background: url('../assets/bg.jpg') no-repeat;
 	background-size: cover;
 	height: 100%;
-	width: 20%;
+	width: 25%;
+	flex-shrink: 0;
 	min-width: 220px;
-	max-width: 350px;
+	max-width: 400px;
 
 	& .head-block{
 		display: flex;
@@ -78,7 +79,7 @@ export default {
 	}
 
 	& .menu{
-		padding: 20px 40px;
+		padding: 20px 25%;
 		list-style: none;
 		& ._item{
 			padding: 10px 0;
@@ -89,7 +90,7 @@ export default {
 		display: flex;
 		justify-content: space-between;
 		list-style: none;
-		padding: 30px 40px;
+		padding: 30px 25%;
 		& ._item{
 			display: block;
 			height: 40px;
