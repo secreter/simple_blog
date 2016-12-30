@@ -15,6 +15,7 @@ const User = { template: '<div> {{ $route.params.name }}</div>' }
 // 我们晚点再讨论嵌套路由。
 const routes = [
   { path: '/hello', component: hello },
+  { path: '/', component: pageList },
   { path: '/list', component: pageList },
   { path: '/post', component: pagePost },
   { path: '/topic', component: pageTopic },
